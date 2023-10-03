@@ -39,16 +39,16 @@
     <h2>Formulário de registo</h2>
     
     <div id="form_registo" class="container">
-        <form>
+        <form id="form_registar" method="POST" action="/php/validaDadosRegsito.php">
             <!-- NOME -->
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Insira o seu nome">
+                    <input type="text" class="form-control" id="nome" placeholder="Insira o seu nome" name="nome">
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <label for="apelido" class="form-label">Apelido</label>
-                    <input type="text" class="form-control" id="apelido" placeholder="Insira o seu apelido">
+                    <input type="text" class="form-control" id="apelido" placeholder="Insira o seu apelido" name="apelido">
                 </div>
             </div>
             <!-- MORADA -->
@@ -105,9 +105,6 @@
                 <div class="col">
                     <button type="reset" class="btn btn-danger" style="margin:-10px">Limpar formulário</button>
                 </div>
-                
-                
-    
             </div>
         </form>
     </div>
